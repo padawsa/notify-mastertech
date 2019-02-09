@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+}
+
+#main{
+    display: grid;
+    grid-template-areas: "div div"
+    "header header"
+    "section1 section1"
+    "section2 section2" 
+    "section3 section3"
+    "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 5px 500px 300px 375px 400px 100px;
+}
+
+#verdinho{
+    grid-area: div;
+    background-color: #2DCC70;
+}
+header{
+    grid-area: header;
+    background-color: grey;
+    background-image: url("img/banner.png");
+    display: flex;
+    background-size: 100%;
+    background-repeat:no-repeat;
+}
+#apps{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+header h1{
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 35pt;
+    font-weight: lighter;
+    padding-left: 40%;
+}
+header span{
+    color: #2DCC70;
+}
+header p{
+    padding-left: 40%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+#botoes{
+    padding-left: 40%;
+}
+header button{
+    opacity: 0.5;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+    border: black;
+}
+
+header button:hover{
+    background-color: #2DCC70;
+    opacity: 1;
+}
+#mao{
+    width: 50vw;
+    display: flex;
+    align-items: flex-end;
+}
+#animacao{
+    height: 450px;
+    width: auto;
+    position: relative;
+    animation-name: celular;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes celular {
+    0%  {left:90%;}
+    100%  {left:1%;}
+}
+#section1{
+    grid-area: section1;
+    background-color: white;
+}
+#section2{
+    grid-area: section2;
+    background-color: #e3e3e3;
+}
+#section3{
+    grid-area: section3;
+    background-color: white;
+}
+footer{
+    grid-area: footer;
+    background-color: #e3e3e3;
+}
