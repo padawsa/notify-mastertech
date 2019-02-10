@@ -22,7 +22,7 @@ header{
     background-color: grey;
     background-image: url("img/banner.png");
     display: flex;
-    background-size: 100% auto%;
+    background-size: 100% auto;
     background-repeat: no-repeat;
 }
 #apps{
